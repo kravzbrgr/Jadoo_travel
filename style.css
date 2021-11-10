@@ -305,17 +305,42 @@ body {
     justify-content: center;
     
 }
-.decore{
+.active{
     width: 275px;
     height: 347px;
     display: flex;
     justify-content: flex-end;
-    background: no-repeat url("img/Rectangle\ 157.png");
+    background: no-repeat url("img/Rectangle\ 157.png") opacity(0);
     background-position: bottom 0 left 0;
     box-sizing: border-box;
     margin-right: 35px;
-    
+    text-decoration: none;
+    margin: 0; 
+    padding: 0;
 }
+.active:visited {
+    color: #000000; 
+   }
+.active:active {
+    color: #000000;
+    background: no-repeat url("img/Rectangle\ 157.png"); 
+    background-position: bottom 0 left 0;
+    box-sizing: border-box;
+    margin-right: 35px;
+    text-decoration: none;
+    margin: 0; 
+    padding: 0;
+   }
+.active:focus{
+    color: #000000;
+    background: no-repeat url("img/Rectangle\ 157.png"); 
+    background-position: bottom 0 left 0;
+    box-sizing: border-box;
+    margin-right: 35px;
+    text-decoration: none;
+    margin: 0; 
+    padding: 0;
+}   
 .Services_img{
     margin: 0;
     padding:0; 
@@ -332,8 +357,11 @@ body {
     width: 240px;
     height: 314px;
     margin-right: 35px;
+    background-color: #fff;
+    border-radius: 36px;
+    border-color: #fff;
 }
-.Services_Flights{
+.Services_box:hover{
     width: 240px;
     height: 314px;
     text-align: center;
@@ -341,8 +369,15 @@ body {
     border-radius: 36px;
     z-index: 5;
     background: #FFFFFF;
-    margin-left: 35px;
-    margin-bottom: 33px;
+}
+.active > .Services_box:focus{
+    width: 240px;
+    height: 314px;
+    text-align: center;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+    z-index: 5;
+    background: #FFFFFF;
 }
 .Services_box:last-child{
     margin-right: 0;

@@ -39,7 +39,7 @@
    </header>      
    <div class="container">
       <aside class="Description Hero"> 
-         <div class="best_destinations">Best Destinations around the world</div>
+         <div id="best_destinations" class="best_destinations">Best Destinations around the world</div>
          <div class="travel_text"> Travel, enjoy<br>
             and live a new<br>
             and full life
@@ -50,11 +50,11 @@
             <p>sell they west hard for the.</p>
          </div>   
          <div class="more_btn">
-            <a href="#">
-               <button class="Find">
+            
+               <button id="color" class="Find" href="#">
                Find out more
                </button>
-            </a>
+            
             <a class="playlink" href="#">
                <div class="play">
                   <div class="play_block"></div>
@@ -68,6 +68,7 @@
       <h2 class="category">CATEGORY</h2>
       <h1 class="we">We Offer Best Services</h1>
       <div class="Services">
+         <a class="active" href="#">
          <div  class="Services_box">
             <div class="Services_img"> <img class="offerimg1" src="img/Group 48.png"></div>
             <div class="Services_text">
@@ -77,8 +78,9 @@
                <p>vanity itself do in it.</p>
             </div>
          </div>
-         <div class="decore">
-         <div class="Services_Flights">
+      </a>
+      <a class="active" href="#">
+         <div class="Services_box">
             <div class="Services_img"><img src="img/Rectangle 158.png"></div>
             <div class="Services_text">
                <h3 class="Services_heading">Best Flights</h3>
@@ -87,7 +89,8 @@
                <p>west hard for the.</p>
             </div>   
          </div>
-       </div>
+      </a>
+      <a class="active" href="#">
          <div class="Services_box">
             <div class="Services_img"> <img class="offerimg4" src="img/Group 50.png"></div>
             <div class="Services_text">
@@ -97,6 +100,8 @@
                <p>engrossed listening.</p>
             </div>
          </div>
+      </a>
+      <a class="active" href="#">
          <div class="Services_box">
             <div class="Services_img"><img class="offerimg5" src="img/Group 49.png"></div>
             <div class="Services_text"> 
@@ -106,7 +111,9 @@
                <p>military customers</p>
             </div>
          </div>
+      </a>
       </div>
    </div>
+   <script src="script.js"></script>
 </body>
 </html>

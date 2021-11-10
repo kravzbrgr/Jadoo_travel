@@ -306,6 +306,7 @@ body {
     
 }
 .active{
+    color: #000000;
     width: 275px;
     height: 347px;
     display: flex;

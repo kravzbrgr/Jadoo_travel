@@ -1,11 +1,19 @@
 document.getElementById('color').onclick = changeColor; 
-let currentColor = "#DF6951";
-function changeColor() { 
-        if(currentColor == "#DF6951"){ 
-            document.getElementById("best_destinations").style.color = "green";
-           currentColor = "green";
-        } else {
-            document.getElementById("best_destinations").style.color = "#DF6951";
-            currentColor = "#DF6951";
-        } 
+let element = document.getElementById("best_destinations");
+function changeColor() {  
+            element.classList.toggle("mystyle");   
     }
+
+let services = document.getElementsByClassName("active");
+let actives = document.getElementsByClassName('focus');
+for (i = 0; services.length > i; i++) {
+  services[i].onclick = function() {
+    var currentActive = actives[0];
+    if (currentActive)
+      currentActive.classList.remove("focus");
+
+    if (currentActive !== this)
+      this.classList.add("focus");
+  };
+}
+

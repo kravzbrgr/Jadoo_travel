@@ -317,8 +317,10 @@ body {
     box-sizing: border-box;
     margin-right: 35px;
     text-decoration: none;
+    border: none;   
     margin: 0; 
-    padding: 0;
+    padding: 0; 
+    background: #fff;
 }
 .active:visited {
     color: #000000; 

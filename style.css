@@ -389,7 +389,7 @@ body {
     margin: 0; 
     padding: 0;
 }
-.box_focus{
+.focus .Services_box{
     width: 240px;
     height: 314px;
     text-align: center;
